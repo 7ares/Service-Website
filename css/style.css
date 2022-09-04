@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+  --color: #6c5ce7;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize !important;
+  transition: all 0.2s linear;
+  text-decoration: none;
+}
+.navbar-style {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+.navbar-brand,
+.navbar-nav a {
+  margin: 0 1rem;
+  font-size: 2rem;
+  color: white !important;
+}
+.navbar-brand {
+  font-size: 2.5rem;
+}
+
+.navbar-nav a:hover {
+  color: #ccc !important;
+}
+.Home {
+  background-image: linear-gradient(purple, var(--color));
+}
+.home-header {
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+.p-style {
+  color: #eee;
+  text-align: center;
+}
+.home-btn {
+  background-color: #eee;
+  outline: none;
+  border: none;
+}
+.home-btn:hover {
+  letter-spacing: 0.3rem;
+}
+.Home .nut1 {
+  font-size: 30rem;
+  top: 10%;
+  left: -15rem;
+  animation: rotate 10s linear infinite;
+  color: rgba(255, 255, 255, 0.2);
+}
+.Home .nut2 {
+  font-size: 30rem;
+  top: 50%;
+  right: -15rem;
+  animation: rotate 10s linear reverse infinite;
+
+  color: rgba(255, 255, 255, 0.2);
+}
+.Home .wave {
+  bottom: 0;
+  background-color: transparent;
+  background-image: url(images/wave1.png);
+  background-repeat: repeat-x;
+  height: 11rem;
+  width: 100%;
+  background-size: 100rem 11rem;
+  animation: waveAnimation 10s linear infinite;
+}
+.wave2 {
+  opacity: 0.2;
+  animation-direction: reverse !important;
+}
+.wave3 {
+  opacity: 0.5;
+  animation-duration: 4s !important ;
+}
+
+/* about section desgin */
+.section-m-header,
+.section-header {
+  color: var(--color);
+  width: max-content;
+}
+.section-m-header::after,
+.section-m-header::before {
+  content: '';
+  position: absolute;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-top: 0.4rem solid var(--color);
+  border-left: 0.4rem solid var(--color);
+}
+.section-m-header::before {
+  top: -1rem;
+  left: -2rem;
+}
+.section-m-header::after {
+  transform: rotate(180deg);
+  bottom: -1rem;
+  right: -2rem;
+}
+.section-p {
+  color: #333;
+  text-align: center;
+}
+.section-btn {
+  background: var(--color);
+}
+.section-btn:hover {
+  letter-spacing: 0.2rem;
+  background: #6c5ce777;
+}
+.About {
+  overflow-y: hidden;
+}
+.About::after {
+  content: '';
+  z-index: -1;
+  height: 50rem;
+  width: 50rem;
+  border-radius: 50%;
+  background-color: var(--color);
+  position: absolute;
+  opacity: 0.2;
+  top: -10rem;
+  right: -10rem;
+}
+.About::before {
+  opacity: 0.2;
+  content: '';
+  z-index: -1;
+  height: 50rem;
+  width: 50rem;
+  border-radius: 50%;
+  background-color: #ccc;
+  position: absolute;
+
+  bottom: -10rem;
+  left: -10rem;
+}
+
+.card-container::before {
+  content: '';
+  border-radius: 50%;
+  height: 15rem;
+  width: 15rem;
+  background-color: #ccc;
+  bottom: -3rem;
+  left: -3rem;
+  position: absolute;
+  z-index: -1;
+}
+.card-container::after {
+  content: '';
+  border-radius: 50%;
+  height: 15rem;
+  width: 15rem;
+  background-color: var(--color);
+  top: -3rem;
+  right: -3rem;
+  position: absolute;
+  z-index: -1;
+}
+.card-body h5 {
+  color: #333;
+}
+.card-body p {
+  color: var(--color);
+}
+.icon-card a {
+  text-decoration: none;
+  color: #333;
+}
+.section-img{
+  text-align: center;
+}
+.section-img img {
+  height: 50vh;
+}
+.ourteam {
+  background-color: #222;
+}
+.ourteam .section-m-header {
+  margin-top: 6rem;
+  color: #fff;
+}
+.ourteam .section-m-header::after,
+.ourteam .section-m-header::before {
+  border-color: #fff;
+}
+.card-container {
+  -webkit-box-reflect: below 0.2rem linear-gradient(transparent 70%, #0004);
+  
+
+  width: 30%;
+  
+  overflow: hidden;
+}
+.card-container img{
+  height: 13rem ;
+  width: 13rem;
+  border-radius: 50%;
+  border: 0.5rem solid #fff ;
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, .3);
+  object-fit: cover;
+}
+.icon-card{
+  margin-top: 4rem;
+}
+.icon-card a:hover{
+  color: var(--color);
+}
+.ourTeamContainer{
+  min-height: 100vh;
+}
+.contact-info input , .contact-info textarea {
+  border: none;
+  outline: none;
+  padding: .3rem;
+  font-size: 1.8rem;
+  margin: .7rem ;
+  color: #333;
+  margin-bottom: 2rem;
+  font-weight: 300;
+  box-shadow: .1rem .3rem .5rem rgba(0,0,0,.3);
+}
+
+.contact-info input[type="button"]{
+font-size: 2rem ;
+padding: .5rem ;
+color:white;
+background-color: var(--color);
+width: 14rem;
+height: 4rem;
+}
+.contact-info input[type="button"]:hover{
+  letter-spacing: .3rem;
+  color: var(--color);
+  background-color: #eee;
+}
+.faq-header{
+  background-color: var(--color);
+  box-shadow: .1rem .1rem .3rem rgba(0, 0, 0, .3);
+  cursor: pointer;
+  margin: 1rem 0;
+}
+.faq-header h3{
+  color: white;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-left: 1rem;
+}
+
+.faq-header span{
+  display: inline-block;
+text-align: center;
+  font-size: 2rem;
+  width: 5rem;
+  height: 4rem;
+  line-height: 4rem;
+  background-color: #fff;
+  color: #333;
+  clip-path: polygon(0% 0%,75% 0% , 100% 50% ,75% 100%,0% 100%);
+}
+
+.FAQ p{
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+  font-size: 1.6rem;
+  padding: 1rem ;
+  margin: 1rem 0;
+  font-weight: 300;
+  display: none;
+}
+.a p:nth-child(2){
+  display: block;
+}
+
+/* animation desgin */
+@keyframes waveAnimation {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100rem;
+  }
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* responsive design */
+@media (max-width: 786px) {
+  .section-img img {
+    width: 90vw;
+    margin: auto;
+  }
+}
+@media (max-width: 800px) {
+  .card-container{
+    height:30rem;
+    width: 50%;}
+  .section-header {
+    font-size: 1.7rem !important;
+  }
+  .home-header {
+    font-size: 3rem !important;
+    font-weight: 600 !important;
+  }
+  .p-style {
+    font-size: 1.5rem !important;
+  }
+}
+@media (max-width: 1200px) {
+  .section-header {
+    font-size: 2.5rem !important;
+  }
+
+  .home-header {
+    font-size: 4rem !important;
+    font-weight: 600 !important;
+  }
+
+  .p-style {
+    font-size: 1.7rem !important;
+  }
+}
